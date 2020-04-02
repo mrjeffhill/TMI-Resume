@@ -1,0 +1,384 @@
+/* History */
+section#History {
+    margin: 40px 0 0 50px;
+    border-left: 3px solid #aaa;
+    position: relative;
+    }
+    section#History::before {
+    
+        display: block;
+        content: '';
+        background: url(../img/string.png) top center repeat-y;
+        height: 100%;
+        width: 10px;
+        position: absolute;
+        left: -7px;
+        top: 30px;
+        box-shadow: 6px 4px 9px -3px rgba(0, 0, 0, 0.9);
+        }
+    section#History::after {
+        content: '';
+        bottom: 40px;
+        height: 30px;
+        background: url(../img/staples.png);
+        background-size: 100%;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -40px;
+        width: 70px;
+        }
+section#History article {
+    /*
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(45deg, rgba(255, 255, 255,1) 0%, rgba(255, 255, 255,1) 41%, rgba(0,0,0,1) 95%, rgba(255,255,255,0) 95%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255, 255, 255,1)), color-stop(41%, rgba(255, 255, 255,1)), color-stop(95%, rgba(0,0,0,1)), color-stop(95%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255,1) 0%, rgba(255, 255, 255,1) 41%, rgba(255, 255, 255,1) 95%, rgba(255,255,255,0) 95%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(45deg, rgba(255, 255, 255,1) 0%, rgba(255, 255, 255,1) 41%, rgba(255, 255, 255,1) 95%, rgba(255,255,255,0) 95%, rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(45deg, rgba(255, 255, 255,1) 0%, rgba(255, 255, 255,1) 41%, rgba(255, 255, 255,1) 95%, rgba(255,255,255,0) 95%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(45deg, rgba(255, 255, 255,1) 0%, rgba(255, 255, 255,1) 41%, rgba(255, 255, 255,1) 95%, rgba(255,255,255,0) 95%, rgba(255,255,255,0) 100%);
+    */
+
+    background-image: url(../img/paper-texture.png), linear-gradient(45deg, ivory 0%, ivory 41%, ivory 95%, rgba(255,255,255,0) 95%, rgba(255,255,255,0) 100%);
+    box-shadow: 2px 8px 4px -6px hsla(0,0%,0%,.3);
+
+    transform: rotate(-1deg);
+    }
+
+section#History article.no-dog-ear { 
+    background: ivory url(../img/paper-texture.png);  
+    transform: rotate(0deg);
+    box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+    transition: box-shadow .25s ease;
+}    
+section#History article.no-dog-ear:hover {
+    box-shadow: 2px 8px 4px -6px hsla(0,0%,0%,.3);
+} 
+
+
+
+#History article:nth-child(even) {
+    transform: rotate(1deg);
+    }
+
+
+
+
+
+
+#History h2 {
+    position: relative;
+    top: -18px;
+    left: -70px;
+    font-size: 2.5em;
+    margin: 0;
+    height: 45px;
+    display: inline-block;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+#History h3.org-title { margin: 0; }
+#History h4.org-name { margin: 0; }
+#History details h5 { 
+    font-weight: bold; 
+    margin: 1em 0 .5em; 
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px 30px;
+    font-family: 'PT Serif', serif;
+    font-size: 1em;
+}
+details p, .custom-list li {
+    margin: 10px 40px;
+    text-align: justify;
+    font-family: 'Walter Turncoat', cursive;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+/* Cool: https://codepen.io/bcarvalho/pen/RZqmZX */
+
+.default article.res-organization {
+	/*
+	display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    width: 28%;
+    padding: 1em;
+    margin: 1em;
+    border: 1px dotted #ccc;
+    background: #eee;
+    border-radius: 5px;
+	*/
+    position: relative;
+    padding: 3em 2em 2em;
+    margin: 1em 1em 4em 3em;
+}
+
+
+    section#History article::before {
+        content: '';
+        left: -46px;
+        top: -53px;
+        height: 130px;
+        background: url(../img/paperclip3.png);
+        background-size: 100%;
+        background-position: left top;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 135px;
+        z-index: 10;
+        }
+
+
+
+span.logo { 
+    height: 82px;
+    padding: 5px;
+    background: #fff;
+    border: 2px solid #3a3535;
+    position: absolute;
+    left: -1px;
+    border-radius: 5px;
+    width: 82px;
+    top: 0;
+    transform: rotate(-9deg);
+    box-shadow: 6px 6px 6px -5px rgba(0, 0, 0, 0.5);
+    background: url(../img/all-logos.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: block;
+	}
+    .logo.sprite-offset-80 { background-position: left -80px; }
+    .logo.sprite-offset-160 { background-position: left -160px; }
+    .logo.sprite-offset-240 { background-position: left -240px; }
+    .logo.sprite-offset-320 { background-position: left -320px; }
+    .logo.sprite-offset-400 { background-position: left -400px; }
+    .logo.sprite-offset-480 { background-position: left -480px; }
+    .logo.sprite-offset-560 { background-position: left -560px; }
+    .logo.sprite-offset-640 { background-position: left -640px; }
+    .logo.sprite-offset-720 { background-position: left -720px; }
+    .logo.sprite-offset-800 { background-position: left -800px; }
+    .logo.sprite-offset-880 { background-position: left -880px; }
+    .logo.sprite-offset-960 { background-position: left -960px; }
+    .logo.sprite-offset-1040 { background-position: left -1040px; }
+    .logo.sprite-offset-1120 { background-position: left -1120px; }
+    .logo.sprite-offset-1200 { background-position: left -1200px; }
+
+
+
+.org-title, .org-name, .org-capacity { 
+    text-align: right;
+    display: block;
+    z-index: 5;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'PT Serif', serif;
+    line-height: 1.5em;
+    }
+    span.blank { 
+        border-bottom: 1px solid #000;
+        display: inline-block;
+        font-family: 'Walter Turncoat', cursive;
+        padding: 0 0 0 12px;
+        margin: 0 5% 0 0;
+        line-height: .7em;
+        width: 60%;
+        text-align: left;
+        }
+
+        .org-name a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #1061a9;
+            font-size: 1.2em;
+            }
+
+
+.org-title.tack .inner { 
+    top: -50px;
+    left: 50%;
+    margin-left: -20px;
+}
+a.org-url {}
+a.org-url i { color: red; }
+
+span.org-dates {
+position: absolute;
+    left: -90px;
+    top: 0px;
+    width: 46px;
+}
+span.org-dates time {
+    display: block;
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: .6em;
+    text-align: center;
+    border: 1px solid #c18e1b;
+    box-shadow: 8px 4px 8px -4px rgba(0, 0, 0, 0.5);
+    }
+    span.org-dates time.org-start {}
+    span.org-dates time.org-end { display: none; }
+        time .m {
+            font-size: 18px;
+            background: #caa207;
+            display: block;
+            border-bottom: 1px solid #b79407;
+            font-family: 'Permanent Marker', cursive;
+            padding: 3px 0;
+            }
+        time .y {
+            word-break: break-all;
+            padding: 6px 0 8px;
+            display: block;
+            line-height: .8em;
+            text-align: center;
+            background: #dca439;
+            font-weight: bold;
+            font-family: 'Permanent Marker', cursive;
+            }
+address.org-location { display: none; }
+span.org-capacity {}
+details.org-details { position: relative; }
+
+
+
+
+
+
+
+
+
+
+
+
+/* testing 
+https://stackoverflow.com/questions/17301282/transitioning-between-open-close-in-details-element
+
+details {
+  transition: height 1s ease;
+}
+details:not([open]) { height: 1.25em; }
+details[open] { height: 20em; overflow: auto;}*/
+/* testing */
+
+summary.org-summary { 
+    cursor: pointer;
+    position: absolute;
+    right: -32px;
+    top: -137px;
+    height: 2.5em;
+    width: 2.5em;
+    text-align: center;
+    line-height: 1.5em;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    box-shadow: -1px 5px 8px -6px rgba(0, 0, 0, 0.5);
+	}
+	summary.org-summary i { 
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: -8px;
+        left: 6px;
+        text-align: center;
+        font-size: 2em;
+        line-height: 1.2em;
+        border-radius: 50%;
+        background: lightsteelblue url(../img/paper-texture.png);
+        color: #47646d;
+        text-shadow: 1px 1px 2px #fff;
+        box-shadow: 6px 5px 5px -6px rgba(0, 0, 0, 0.5);
+        /*
+        border-left: 1px solid #fff;
+        border-right: 1px solid #aaa;
+        */
+        }
+details summary.org-summary i.fas.fa-caret-up { display: none; }
+details[open] summary.org-summary i.fas.fa-caret-down { display: none; }
+details[open] summary.org-summary i.fas.fa-caret-up { display: block; }
+	summary.org-summary span { display: none; }
+details summary.org-summary::-webkit-details-marker { display:none; }
+
+
+
+
+
+section#History article.no-dog-ear summary.org-summary { 
+    border: none; 
+    box-shadow: none;
+    top: -150px;
+}
+
+
+ul.org-accomplishments { margin-top: 0; }
+
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+.custom-list li {
+    position: relative;
+    padding-left: 20px;
+    display: inline-flex;
+    margin: .5em 1em;
+    text-decoration: none;
+    text-align: left;
+}
+.custom-list li:before {
+    font-family: 'FontAwesome';
+    content: '\f02e';
+    margin: 0 8px 0 -15px;
+    color: #3a3535;
+    font-size: 1.5em;
+}
+
+
+.gallery { overflow: visible; margin: 0; }
+.gallery p { display: none; }
+
+/*
+.clippy {
+    display: block;
+    height: 90px;
+    width: 110px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+}
+.clippy img {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translateY(-50%) translateX(-50%);
+   width: 200px;
+}
+
+ul.gallery, ul.gallery li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+ul.gallery { margin: 0 auto 10px; }
+ul.gallery li {
+    display: inline-block;
+    width: 160px;
+    height: 120px;
+    overflow: hidden;
+}
+ul.gallery img { width: 100%; }
+*/
+
+
+
+

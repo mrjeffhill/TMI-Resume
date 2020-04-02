@@ -1,0 +1,100 @@
+/* linkedin recommendations */
+body.agile {
+	aside {
+		.res-blurbs {
+			height: 33em;
+			position: relative;
+			ul {
+				list-style-type: none;
+				margin: 0 0 0 2em;
+				padding: 0;
+				position: relative;
+				li {
+					background: url(../img/napkin.png) -2.4rem -2.4rem;
+					width: 26rem;
+					height: 26rem;
+					background-size: auto 117.5%;
+					margin: 0;
+					padding: 0;
+					box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+					position: absolute;
+					top: 0;
+					left: 0;
+					&::after {
+						content: '';
+						height: 100%;
+						width: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						opacity: .8;
+						z-index: -1;
+						background-image: url(../img/stain1.png);
+						background-size: 80%;
+						background-repeat: no-repeat;
+						background-position: bottom right;
+					}
+					blockquote {
+						padding: 3em;
+						margin: 0;
+						font-size: .9em;
+						font-family: $customFont1;
+						p {
+							font-size: 1.1em;
+							line-height: 1.2em;
+						}
+					}
+					cite {
+						font-family: $baseFont;
+						position: absolute;
+						bottom: 6.5em;
+						right: 7em;
+						text-align: right;
+						font-size: .75em;
+						strong {
+							font-size: 1.75em;
+						}
+					}
+				}
+				li.nap1 {
+					&::after {
+						background-image: url(../img/stain2.png);
+					}
+				}
+				li.nap2 {
+					&::after {
+						background-image: url(../img/stain3.png);
+					}
+				}
+				li.nap3 {
+					&::after {
+						background-image: url(../img/stain4.png);
+					}
+				}
+				li.nap4 {
+					&::after {
+						background-image: url(../img/stain5.png);
+					}
+				}
+			}
+			ul.add-tack {
+				&::before {
+					content: "\f04c";
+					color: #000;
+					line-height: 1.4em;
+					cursor: pointer;
+				}
+			}
+		}
+		.res-blurbs.paused {
+			ul.add-tack {
+				&::before {
+					content: "\f04b";
+					color: #000;
+					line-height: 1.4em;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+
+/* Fibonacci 4 Body https://codepen.io/bobby1030/pen/EWmyZW */
+$fibWidthA: 100%;
+$fibWidthB: $fibWidthA * .382; /* .382% v .374vw */
+$fibHeightB: $fibWidthB;
+
+$fibWidthC: $fibWidthA * .618;
+$fibHeightC: $fibWidthC;
+
+/* Fibonacci 4 Header */
+$fibHeadWidthA: $fibWidthC * .618;
+$fibHeadWidthB: $fibWidthB * .618; 
+
+
+/* Fibby Widgets */
+
+.fibonacci-ne { width: 162px; height: 100px; background: #fff; border: 1px solid #000; text-align: right; }
+.fibonacci-ne.lg { width: 324px; height: 200px; background: #fff; border: 1px solid #000; text-align: right; }
+.fibonacci-ne :last-child { width: $fibWidthB; height: 100%; background: #ddd; display: inline-block; }
+.fibonacci-ne :last-child :last-child { width: 100%; height: $fibHeightB; background: #ccc; display: block; }
+.fibonacci-ne :last-child :last-child :last-child { width: $fibWidthB; height: 100%; background: #bbb; display: block; }
+.fibonacci-ne :last-child :last-child :last-child :last-child { width: 100%; height: 50%; background: #000; display: block; position: relative; top: 50%; }
+
+.fibonacci-se { width: 162px; height: 100px; background: #fff; border: 1px solid #000; text-align: right; }
+.fibonacci-se :last-child { width: $fibWidthB; height: 100%; background: #ddd; display: inline-block; position: relative; }
+.fibonacci-se :last-child :last-child { width: 100%; height: $fibHeightB; background: #ccc; display: block; top: $fibHeightC; }
+.fibonacci-se :last-child :last-child :last-child { width: $fibWidthB; height: 100%; background: #bbb; display: block; top: 0; }
+.fibonacci-se :last-child :last-child :last-child :last-child { width: 100%; height: 50%; background: #aaa; display: block; position: relative; }
+
+.fibonacci-sw { width: 162px; height: 100px; background: #fff; border: 1px solid #000; text-align: left; }
+.fibonacci-sw :last-child { width: $fibWidthB; height: 100%; background: #ddd; display: inline-block; position: relative; }
+.fibonacci-sw :last-child :last-child { width: 100%; height: $fibHeightB; background: #ccc; display: block; top: $fibHeightC; }
+.fibonacci-sw :last-child :last-child :last-child { width: $fibWidthB; height: 100%; background: #bbb; display: block; top: 0; float: right; }
+.fibonacci-sw :last-child :last-child :last-child :last-child { width: 100%; height: 50%; background: #aaa; display: block; position: relative; }
+
+.fibonacci-nw { width: 162px; height: 100px; background: #fff; border: 1px solid #000; text-align: left; }
+.fibonacci-nw :last-child { width: $fibWidthB; height: 100%; background: #ddd; display: inline-block; }
+.fibonacci-nw :last-child :last-child { width: 100%; height: $fibHeightB; background: #ccc; display: block; }
+.fibonacci-nw :last-child :last-child :last-child { width: $fibWidthB; height: 100%; background: #bbb; display: block; float: right; }
+.fibonacci-nw :last-child :last-child :last-child :last-child { width: 100%; height: 50%; background: #aaa; display: block; position: relative; top: 50%; }
+
+.fibonacci-ne-loop { width: 100% !important; height: 100% !important; background: #fff !important; top: 0 !important; }
+.fibonacci-ne-loop :last-child { width: $fibWidthB !important; height: 100% !important; background: #ddd !important; display: inline-block !important; }
+.fibonacci-ne-loop :last-child :last-child { width: 100% !important; height: $fibHeightB !important; background: #ccc !important; display: block !important; }
+.fibonacci-ne-loop :last-child :last-child :last-child { width: $fibWidthB !important; height: 100% !important; background: #bbb !important; display: block !important; }
+.fibonacci-ne-loop :last-child :last-child :last-child :last-child { width: 100% !important; height: 50% !important; background: #aaa !important; display: block !important; position: relative !important; top: 50% !important; }
+
+

@@ -1,0 +1,113 @@
+/* education */
+body.agile {
+	.res-education {
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 50vw;
+			margin: 0 0 4em 3em;
+			padding: 0;
+			list-style-type: none;
+			position: relative;
+			li {
+				background: #fff;
+				box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+				margin: .5em !important;
+				padding: 1.5em .5em .5em;
+				text-align: center;
+				width: 12vw;
+				height: 200px;
+				&::before {
+					top: .25em;
+				}
+				&::after {
+					top: .25em;
+				}
+				h2 {
+					font-size: .8em;
+					border-top: 1px solid #ddd;
+					border-bottom: 1px solid #ccc;
+					background: #eee;
+					margin: .75em -.65em;
+					padding: .25em 0;
+					em {
+						font-size: .8em;
+						display: block;
+					}
+				}
+				img {
+					display: block;
+					width: 80%;
+					margin: 0 auto;
+				}
+				dl {
+					display: none;
+					height: 16em;
+					overflow: hidden;
+					text-align: left;
+					overflow: auto;
+					font-size: .5em;
+					dt {
+						display: inline-block;
+						margin: 0;
+						vertical-align: top;
+						width: 30%;
+						text-align: right;
+						font-weight: bold;
+						&:last-child {
+							width: 30%;
+							text-align: right;
+							display: block;
+						}
+					}
+					dd {
+						display: inline-block;
+						margin: 0;
+						vertical-align: top;
+						padding: 0 0 0 1%;
+						width: 60%;
+						text-align: left;
+						&:last-child {
+							padding: .5em;
+							width: auto;
+						}
+						p {
+							padding: 0;
+							margin: 0 .5em .5em;
+						}
+					}
+				}
+				&:hover {
+					padding-top: 1em;
+					box-shadow: -5px 18px 40px -12px rgba(0, 0, 0, 0.4);
+					img {
+						position: absolute;
+						bottom: 1em;
+						left: 1em;
+						right: 1em;
+						z-index: -1;
+						opacity: .2;
+						width: 60%;
+					}
+					dl {
+						display: block;
+					}
+					dl.pretty-scroll {
+						&::-webkit-scrollbar {
+							width: 6px;
+						}
+						&::-webkit-scrollbar-track {
+							-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+							-webkit-border-radius: 5px;
+							border-radius: 5px;
+						}
+						&::-webkit-scrollbar-thumb {
+							-webkit-border-radius: 5px;
+							border-radius: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+
+@import "theme-core";
+@import "resume-core";
+
+// agile theme specific:
+@import "theme-agile-base";
+@import "skills";
+@import "recommendations";
+@import "interests";
+@import "doodles";
+@import "summary";
+@import "history";
+@import "education";
+@import "magical-funk";
+
+// tewls:
+@import "tools";
+
+// make nice for all:
+@import "responsive";
+@import "print";

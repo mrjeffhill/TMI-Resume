@@ -1,0 +1,272 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<title>[ 404 ]</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- https://stackoverflow.com/questions/49547/how-do-we-control-web-page-caching-across-all-browsers -->
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+		<link rel="manifest" href="site.webmanifest" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons" />
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Caveat|Indie+Flower|PT+Serif|Patrick+Hand+SC|Finger+Paint|Permanent+Marker|Amita|Raleway|Special+Elite|Walter+Turncoat&display=swap" rel="stylesheet" />
+
+
+<style>
+body {
+    padding: 10vw;
+    text-align: center;
+}
+h1, a { font-family: 'PT Serif', serif; margin: 0; padding: 0; }
+.outer {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    /* note: 
+     change the h/w values here
+     or just resize the browser
+  */
+    width: 50vw;
+    height: calc(50vw * 0.618);
+    border: 1px solid #666;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 1s ease;
+    font-family: "Amita", cursive;
+    text-align: center;
+    cursor: pointer;
+    /*
+  animation: mymove 3s linear;
+  animation-iteration-count: 5;
+  */
+}
+
+@keyframes mymove {
+    from {
+        transform: rotate(0deg);
+        transform-origin: 72.7% 73.6%;
+    }
+    to {
+        transform: rotate(360deg);
+        transform-origin: 72.7% 73.6%;
+    }
+}
+.outer:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+}
+[class^="fib"] {
+    position: absolute;
+    transition: all 1s ease;
+    overflow: hidden;
+    border: none;
+    transform: rotate(0deg);
+    opacity: 0.8;
+    padding: 0;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0), inset 0 0 0 rgba(255, 255, 255, 0);
+}
+[class^="fib"]:not(.fib-9):hover {
+    border: 1px solid #fff;
+    transform: rotate(-4deg);
+    opacity: 1;
+    padding: 2%;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5),
+        inset 0 0 1px rgba(255, 255, 255, 0.8);
+    z-index: 20;
+}
+.fib-9:hover {
+    /* the Magic! */
+    border: 1px solid #fff;
+    transform: rotate(-4deg);
+    opacity: 1;
+    padding: 2%;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5),
+        inset 0 0 1px rgba(255, 255, 255, 0.8);
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url("assets/img/rollin.gif")
+        no-repeat center top;
+    background-size: cover;
+}
+
+[class^="fib"]:before {
+    content: "";
+    display: block;
+    height: 200%;
+    width: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5),
+        inset 0 0 1px rgba(255, 255, 255, 0.8);
+    z-index: -1;
+}
+
+.fib-1 {
+    width: calc(100% * 0.618);
+    height: calc(100%);
+    background: #777;
+    z-index: 6;
+    font-size: 17vw;
+}
+.fib-2 {
+    width: calc(100% * 0.382);
+    height: calc(100% * 0.618);
+    background: #888;
+    left: calc(100% * 0.618);
+    z-index: 7;
+    font-size: 13vw;
+}
+.fib-2:before {
+    left: -100%;
+}
+.fib-3 {
+    width: calc(100% * 0.382 * 0.618);
+    height: calc(100% * 0.382);
+    background: #999;
+    left: calc(100% * 0.618 + (100% * 0.382 * 0.382));
+    top: calc(100% * 0.618);
+    z-index: 8;
+    font-size: 8vw;
+}
+.fib-3:before {
+    left: -100%;
+    top: -100%;
+}
+.fib-4 {
+    width: calc(100% * 0.382 * 0.382);
+    height: calc(100% * 0.382 * 0.618);
+    background: #aaa;
+    left: calc(100% * 0.618);
+    top: calc(100% * 0.618 + (100% * 0.382 * 0.382));
+    z-index: 9;
+    font-size: 5vw;
+}
+.fib-4:before {
+    left: 0;
+    top: -100%;
+}
+.fib-5 {
+    width: calc(100% * 0.618 * 0.382 * 0.382);
+    height: calc(100% * 0.382 * 0.382);
+    background: #bbb;
+    left: calc(100% * 0.618);
+    top: calc(100% * 0.618);
+    z-index: 10;
+    font-size: 3vw;
+}
+.fib-6 {
+    width: calc(100% * 0.382 * 0.618 * 0.382 * 0.618);
+    height: calc(100% * 0.382 * 0.618 * 0.382);
+    background: #ccc;
+    left: calc(100% * 0.618 + (100% * 0.382 * 0.382) * 0.618);
+    top: calc(100% * 0.618);
+    z-index: 11;
+    font-size: 2vw;
+}
+.fib-6:before {
+    left: -100%;
+}
+.fib-7 {
+    width: calc(100% * 0.382 * 0.618 * 0.382 * 0.618 * 0.618);
+    height: calc(100% * 0.382 * 0.618 * 0.382 * 0.618);
+    background: #ddd;
+    left: calc(
+        100% * 0.618 + (100% * 0.382 * 0.382) -
+            (100% * 0.382 * 0.618 * 0.382 * 0.618 * 0.618)
+    );
+    top: calc(100% * 0.618 + (100% * 0.382 * 0.618 * 0.382));
+    z-index: 12;
+    font-size: 1vw;
+}
+.fib-7:before {
+    left: -100%;
+    top: -100%;
+}
+.fib-8 {
+    width: calc(100% * 0.382 * 0.618 * 0.382 * 0.618 * 0.382);
+    height: calc(100% * 0.382 * 0.618 * 0.382 * 0.618 / 2);
+    background: #eee;
+    left: calc(
+        100% * 0.618 + (100% * 0.382 * 0.382) -
+            (100% * 0.382 * 0.618 * 0.382 * 0.618 * 0.618) -
+            (100% * 0.382 * 0.618 * 0.382 * 0.618 * 0.382)
+    );
+    top: calc(
+        100% * 0.618 + (100% * 0.382 * 0.618 * 0.382) +
+            (100% * 0.382 * 0.618 * 0.382 * 0.618 / 2)
+    );
+    z-index: 13;
+    font-size: 0.618vw;
+}
+.fib-8:before {
+    left: 0;
+    top: -100%;
+}
+.fib-9 {
+    width: calc(100% * 0.382 * 0.618 * 0.382 * 0.618 * 0.382);
+    height: calc(100% * 0.382 * 0.618 * 0.382 * 0.618 / 2);
+    background: rgba(240, 240, 240, 0.5);
+    left: calc(
+        100% * 0.618 + (100% * 0.382 * 0.382) -
+            (100% * 0.382 * 0.618 * 0.382 * 0.618 * 0.618) -
+            (100% * 0.382 * 0.618 * 0.382 * 0.618 * 0.382)
+    );
+    top: calc(100% * 0.618 + (100% * 0.382 * 0.618 * 0.382));
+    z-index: 13;
+    font-size: 0.618vw;
+}
+
+.outer p {
+    vertical-align: middle;
+    margin: 50% auto;
+    padding: 0;
+    height: 0;
+    width: auto;
+    line-height: 0;
+    display: block;
+    transition: all 1s ease;
+    font-size: 20%;
+    opacity: 0;
+}
+[class^="fib"]:not(.fib-9):hover p {
+    opacity: 1;
+    font-size: 100%;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+	<div class="outer">
+	  <div class="fib-1"><p>34</p></div>
+	  <div class="fib-2"><p>21</p></div>
+	  <div class="fib-3"><p>13</p></div>
+	  <div class="fib-4"><p>8</p></div>
+	  <div class="fib-5"><p>5</p></div>
+	  <div class="fib-6"><p>3</p></div>
+	  <div class="fib-7"><p>2</p></div>
+	  <div class="fib-8"><p>1</p></div>
+	  <div class="fib-9"><p>1</p></div>
+	</div>
+	<h1>404</h1>
+	<a href="http://resume.jeffhill.info/?layout=agile">try this</a>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</body>
+</html>

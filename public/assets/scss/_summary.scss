@@ -1,0 +1,34 @@
+/* summary & objective */
+body.agile {
+	section {
+		div.note-card {
+			height: 20rem;
+			width: 32rem;
+			display: block;
+			h4 {
+				padding: 1em 1em 0;
+				font-weight: bold;
+				font-size: 1.5em;
+			}
+			span {
+				margin: 0;
+				p {
+					font-size: 1em;
+					line-height: 1.5em;
+					margin: 1.5em 0 0;
+					font-family: $specialFont;
+				}
+			}
+		}
+	}
+	section.res-objective {
+		>h2 {
+			z-index: 10;
+		}
+	}
+	section.res-summary {
+		>h2 {
+			z-index: 10;
+		}
+	}
+}

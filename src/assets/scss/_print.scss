@@ -1,0 +1,35 @@
+
+/* https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/ */
+@media print { 
+
+* {
+  margin: unset !important;
+  padding: unset !important;
+  border: unset !important;
+
+  height: unset !important;
+  width: unset !important;
+  scroll: unset !important;
+  overflow: unset !important;
+
+  background: unset !important;
+  transform: unset !important;
+
+  position: unset !important;
+  top: unset !important;
+  bottom: unset !important;
+  left: unset !important;
+  right: unset !important;
+
+  font-family: 'Georgia' serif !important;
+  font-size: 13pt !important;
+  color: #000 !important;
+  opacity: unset !important;
+  box-shadow: unset !important;
+  text-shadow: unset !important;
+  }
+
+*::after, *::before, img, input, object, #ResizR, #fancyModal, footer { display: none !important; }
+details:not([open]) { height: auto; }
+
+}
