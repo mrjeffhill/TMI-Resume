@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/TMI-Resume/static/css/main.0e46c9f9.chunk.css",
+    "main.js": "/TMI-Resume/static/js/main.c4006339.chunk.js",
+    "main.js.map": "/TMI-Resume/static/js/main.c4006339.chunk.js.map",
+    "runtime-main.js": "/TMI-Resume/static/js/runtime-main.6b9e0a2d.js",
+    "runtime-main.js.map": "/TMI-Resume/static/js/runtime-main.6b9e0a2d.js.map",
+    "static/js/2.05e6223a.chunk.js": "/TMI-Resume/static/js/2.05e6223a.chunk.js",
+    "static/js/2.05e6223a.chunk.js.map": "/TMI-Resume/static/js/2.05e6223a.chunk.js.map",
+    "index.html": "/TMI-Resume/index.html",
+    "precache-manifest.33f75cc85fff0557607577bc880adebd.js": "/TMI-Resume/precache-manifest.33f75cc85fff0557607577bc880adebd.js",
+    "service-worker.js": "/TMI-Resume/service-worker.js",
+    "static/css/main.0e46c9f9.chunk.css.map": "/TMI-Resume/static/css/main.0e46c9f9.chunk.css.map",
+    "static/js/2.05e6223a.chunk.js.LICENSE.txt": "/TMI-Resume/static/js/2.05e6223a.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/TMI-Resume/static/media/zen-sharp-3.8efb07fe.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b9e0a2d.js",
+    "static/js/2.05e6223a.chunk.js",
+    "static/css/main.0e46c9f9.chunk.css",
+    "static/js/main.c4006339.chunk.js"
+  ]
+}
