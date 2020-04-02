@@ -1,0 +1,113 @@
+
+/* Pallets */
+$coco1: #f4f4f4;
+$coco2: #ff7315;
+$coco3: #3a3535;
+$coco4: #232020;
+
+$moss1: #f4eec7;
+$moss2: #fe9801;
+$moss3: #ccda46;
+$moss4: #697c37;
+
+$foam1: #fafafa;
+$foam2: #e8f1f5;
+$foam3: #005691;
+$foam4: #004a7c;
+
+$straw1: #fbe8d3;
+$straw2: #f85f73;
+$straw3: #928a97;
+$straw4: #283c63;
+
+$slate1: #f0f5f9;
+$slate2: #c9d6df;
+$slate3: #52616b;
+$slate4: #1e2022;
+
+$musk1: #e3e3e3;
+$musk2: #f95959;
+$musk3: #455d7a;
+$musk4: #233142;
+
+$woods1: #e3d9ca;
+$woods2: #95a792;
+$woods3: #596c68;
+$woods4: #403f48;
+
+
+$light: rgb(205, 205, 205) !default;
+$lightest: lighten($light, 100%) !default;
+$lighter: lighten($light, 10%) !default;
+
+$color1: rgb(186, 59, 70) !default; // R
+$color2: rgb(158, 169, 63) !default; // G
+$color3: rgb(97, 201, 168) !default; // B
+$color4: rgb(237, 155, 64) !default; // O
+$color5: rgb(227, 197, 103) !default; // Y
+
+$dark: rgb(50, 50, 50) !default;
+$darker: darken($dark, 10%) !default;
+$darkest: darken($dark, 100%) !default;
+$link-color: #1061a9  !default;
+
+
+/*
+$corp-color: $blue !default;
+$corp-color-dark: darken($corp-color, 15%) !default;
+$corp-color-second: $red !default;
+$corp-color-second-dark: darken($corp-color-second, 15%) !default;
+*/
+
+
+$palletHeight: 80px;
+$palletWidth: $palletHeight * 1.618;
+.pallet { width: $palletWidth; height: $palletHeight; opacity: 1; margin: .5em; display: inline-block;  }
+.pallet:hover { opacity: .7; border-radius: 5px 0 0 20px; }
+.pallet:hover p { text-decoration: underline; text-transform: uppercase; }
+.pallet p { 
+	display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 60%;
+    line-height: 4em;
+    font-weight: bold;
+    float: left;
+}
+.res-tab-pallet .tab-content { max-height: 300px !important; }
+
+div.pallet.coco { background: $coco1; border: 1px solid $coco4; }
+div.pallet.coco>div { background: $coco2; }
+div.pallet.coco>div>div { background: $coco3; }
+div.pallet.coco>div>div>div { background: $coco4; }
+div.pallet.coco>div>div>div>div { background: #000; }
+
+div.pallet.foam { background: $foam1; border: 1px solid $foam4; }
+div.pallet.foam>div { background: $foam2; }
+div.pallet.foam>div>div { background: $foam3; }
+div.pallet.foam>div>div>div { background: $foam4; }
+div.pallet.foam>div>div>div>div { background: #000; }
+
+div.pallet.straw { background: $straw1; border: 1px solid $straw4; }
+div.pallet.straw>div { background: $straw2; }
+div.pallet.straw>div>div { background: $straw3; }
+div.pallet.straw>div>div>div { background: $straw4; }
+div.pallet.straw>div>div>div>div { background: #fff; }
+
+div.pallet.slate { background: $slate1; border: 1px solid $slate4; }
+div.pallet.slate>div { background: $slate2; }
+div.pallet.slate>div>div { background: $slate3; }
+div.pallet.slate>div>div>div { background: $slate4; }
+div.pallet.slate>div>div>div>div { background: #fff; }
+
+div.pallet.musk { background: $musk1; border: 1px solid $musk4; }
+div.pallet.musk>div { background: $musk2; }
+div.pallet.musk>div>div { background: $musk3; }
+div.pallet.musk>div>div>div { background: $musk4; }
+div.pallet.musk>div>div>div>div { background: #000; }
+
+div.pallet.woods { background: $woods1; border: 1px solid $woods4; }
+div.pallet.woods>div { background: $woods2; }
+div.pallet.woods>div>div { background: $woods3; }
+div.pallet.woods>div>div>div { background: $woods4; }
+div.pallet.woods>div>div>div>div { background: #000; }
