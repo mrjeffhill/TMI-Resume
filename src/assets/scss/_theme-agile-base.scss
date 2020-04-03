@@ -1,0 +1,109 @@
+body.agile {
+  background: rgba($bodyBG, 1) url("../img/bg-cloth-bb.png");
+  #root > header {
+    font-family: $headerFont;
+    z-index: 1000000;
+    > h2 {
+      border: none !important;
+    }
+    h3 {
+      &::before {
+        content: "<-- Look, a haiku!";
+        position: absolute;
+        white-space: nowrap;
+        left: 97%;
+        font-size: 0.75em;
+        background: yellow;
+        padding: 0.4em 0.6em 0;
+        -moz-transform: rotate(37deg);
+        -webkit-transform: rotate(37deg);
+        -o-transform: rotate(37deg);
+        -ms-transform: rotate(37deg);
+        transform: rotate(37deg);
+        top: 4em;
+        border-radius: 5px;
+        border: 1px solid orange;
+        display: none;
+      }
+      &:hover {
+        &::before {
+          display: block;
+        }
+      }
+    }
+  }
+  main {
+    &::before {
+      content: "The TMI Resumé (tm.i)";
+      position: absolute;
+      top: -0.1em;
+      right: -0.1em;
+      display: block;
+      font-size: 5.4em;
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      margin: 1.5em 1em;
+      height: 0;
+      white-space: nowrap;
+      width: 0;
+      font-family: $headerFont;
+      font-weight: bold;
+      opacity: 0.2;
+      text-shadow: 2px -1px 0px white, 0px 0px 0px black;
+      color: #776736;
+    }
+  }
+  section {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    position: relative;
+    background: none;
+    > h2 {
+      font-family: $sectionHeadFont;
+      display: inline-block;
+      text-align: center;
+      font-size: 1.5em;
+      margin: 0.8em;
+      padding: 0.5em 1em;
+      white-space: nowrap;
+      min-height: auto;
+      position: relative;
+      color: #000;
+    }
+    article {
+      border-top: unset;
+      padding: unset;
+      nav {
+        top: 0.25em;
+        right: 0.4em;
+      }
+    }
+    nav {
+      right: -3em;
+    }
+  }
+  footer {
+    .extra {
+      display: block;
+      font-size: 3em;
+      padding: 0.1em;
+    }
+    .tooly {
+      top: 7.5em;
+    }
+    .cleany {
+      top: 4em;
+    }
+    .froggy {
+      top: 5.5em;
+    }
+    .res-map {
+      width: 85%;
+      border-right: 2px dotted rgba(140, 0, 0, 0.5);
+    }
+  }
+}

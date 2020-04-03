@@ -1,0 +1,291 @@
+/* Other less-than-necessary things */
+
+/* parseOmatic */
+.all-parsed {
+	position: fixed;
+	width: 80%;
+	left: 1%;
+	top: 120%;
+	height: 66%;
+	z-index: 100000;
+	font-size: 1em;
+	padding: 2em;
+	background: rgba(0, 0, 0, .5);
+	border-radius: .25em;
+	opacity: 0;
+	transition: top .5s ease-in-out, opacity .5s ease-in-out;
+
+	&.active {
+		top: 20%;
+		opacity: 1;
+	}
+	span {
+		display: block;
+		padding: 1em;
+		height: 90%;
+		overflow-y: auto;
+		overflow-x: hidden;
+		border: 1px solid #000;
+		background: rgba(0, 0, 0, .5);
+	}
+	h4 {
+		text-align: center;
+		font-size: 1.5em;
+		margin: .5em;
+		font-weight: bold;
+		color: rgb(255, 165, 0);
+	}
+
+	dt {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0;
+		padding: .25em .5em 0 0;
+		color: salmon;
+		width: 30%;
+		text-align: right;
+	}
+	dd {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0;
+		padding: .25em .5em 0 0;
+		color: ivory;
+		width: 60%;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+	}	
+}
+
+/* font panel */
+footer ul.current-fonts {
+	z-index: 1000;
+	list-style-type: none;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	display: none;
+	right: 70px;
+	height: 30px;
+	border: 3px solid rgba(140, 0, 0, .5);
+	border-radius: 10px 10px 0 0;
+	border-bottom: none;
+	&.active {
+		display: block;
+	}
+	&:hover { 
+		z-index: 1001; 
+		border-color: rgba(140, 0, 0, 1);
+	}
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: .25em .5em;
+		white-space: nowrap;
+		&:first-child {
+			border-radius: 7px 0 0 0;
+		}
+		&:last-child {
+			border-radius: 0 7px 0 0;
+		}
+	}
+	li.pt-serif {
+		font-family: 'PT Serif', serif;
+	}
+	li.raleway {
+		font-family: 'Raleway', sans-serif;
+	}
+	li.patrick {
+		font-family: 'Patrick Hand SC', cursive;
+	}
+	li.walter {
+		font-family: 'Walter Turncoat', cursive;
+	}
+	li.amatic {
+		font-family: 'Amatic SC', cursive;
+	}
+	li.marker {
+		font-family: 'Permanent Marker', cursive;
+	}
+	li.indie {
+		font-family: 'Indie Flower', cursive;
+	}
+	li.caveat {
+		font-family: 'Caveat', cursive;
+	}
+	li.special {
+		font-family: 'Special Elite', cursive;
+	}
+	li.architect {
+		font-family: 'Architects Daughter', cursive;
+	}
+	li.finger {
+		font-family: 'Finger Paint', cursive;
+	}
+}
+
+/* color panel */
+footer ul.current-pallet {
+	z-index: 1000;
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	display: none;
+	right: 70px;
+	border: 3px solid rgba(140, 0, 0, .5);
+	border-radius: 10px 10px 0 0;
+	border-bottom: none;
+	&.active {
+		display: block;
+	}
+	&:hover { 
+		z-index: 1001; 
+		border-color: rgba(140, 0, 0, 1);
+	}
+	li {
+		width: 30px;
+		display: inline-block;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		float: left;
+		&:nth-child(1) {
+			background: $lightest;
+			border-radius: 7px 0 0 0;
+		}
+		&:nth-child(2) {
+			background: $lighter;
+		}
+		&:nth-child(3) {
+			background: $light;
+		}
+		&:nth-child(4) {
+			background: $color1;
+		}
+		&:nth-child(5) {
+			background: $color2;
+		}
+		&:nth-child(6) {
+			background: $color3;
+		}
+		&:nth-child(7) {
+			background: $color4;
+		}
+		&:nth-child(8) {
+			background: $color5;
+		}
+		&:nth-child(9) {
+			background: $dark;
+		}
+		&:nth-child(10) {
+			background: $darker;
+		}
+		&:nth-child(11) {
+			background: $darkest;
+		}
+		&:nth-child(12) {
+			background: $link-color;
+			border-radius: 0 7px 0 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+// FUNKY =================================================================
+
+
+
+
+/* THIS monstrocity! */
+
+.resizr { position: relative; width: 100%; }
+.resizr body { position: relative; border-right: 2px dashed #880000; }
+.resizr body.device-desktop, .resizr body.device-tv { border-right: none; }
+#ResizR { 
+	position: fixed;
+	right: 1.8rem;
+    top: 17.5em;
+    display: inline-block;
+    z-index: 100;
+    border-top: 2px solid #65583c4f;
+    width: 50px;
+    text-align: center;
+    padding: 0;
+}
+
+#ResizR, #ResizR li { 
+	list-style: none;
+	margin: 0;
+	font-size: 14px;
+	font-family: $headerFont;
+	display: block;
+}
+//.resizr.device-desktop #ResizR li { display:inline-block; }
+#ResizR li { 
+	text-align: center;
+    padding: 10px 4px 0;
+    cursor: pointer;
+    position: relative;
+    opacity: .4;
+    text-shadow: 1px 0px 0px white, 0px 0px 0px black;
+    color: #776736;
+    margin: 0 auto;
+	}
+	#ResizR li:first-child { 
+		padding-top: 12px;
+    	border-top: 1px solid #ffffff9e; 
+		}
+#ResizR li:hover { opacity: .6; }
+#ResizR li i { 
+	font-size: 30px; 
+
+
+}
+#ResizR li.active { color: rgba(140, 0, 0, .8); opacity: .8; }
+#ResizR li i.landscape { 
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	}
+#ResizR li span { 
+	display: none; 
+	padding: 0 0 0px;
+    position: absolute;
+    bottom: .5em;
+    left: 0;
+    width: 100%;
+	}
+#ResizR li:hover span { display: block; color: #000; }
+
+body.device-watch, body.device-watch>header { max-width: 218px; }
+html.device-watch { font-size: 6px; }
+body.device-phone-portrait, body.device-phone-portrait>header { max-width: 360px; }
+html.device-phone-portrait { font-size: 8px; }
+body.device-phone-landscape, body.device-phone-landscape>header { max-width: 599px;  }
+html.device-phone-landscape { font-size: 8px; }
+body.device-tablet-portrait, body.device-tablet-portrait>header { min-width: 600px; width: 899px; }
+html.device-tablet-portrait { font-size: 11px; }
+body.device-tablet-landscape, body.device-tablet-landscape>header { min-width: 900px; width: 1199px; }
+html.device-tablet-landscape { font-size: 14px; }
+body.device-desktop { min-width: 1200px; width: 100%; }
+body.device-tv { min-width: 2560px; }
+html.device-tv { font-size: 24px; }
+
+
+

@@ -1,0 +1,689 @@
+/* shitty-iphone5-pos-that-many-marketing-people-still-have-and-under ... just-get-an-apple-watch */
+@media (max-width: 350px) {
+}
+
+/*
+// lock that sh*t down!
+@media screen and (max-width: 599px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg) !important;
+    transform-origin: left top !important;
+    width: 100vh !important;
+    overflow-x: hidden !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+  }
+}
+*/
+
+@media (max-width: 599px) {
+  // .phone-only
+  // global font, menu, & layout
+  html {
+    font-size: 12px;
+  }
+
+  body {
+    > header {
+      font-size: 0.8rem;
+      height: 4em;
+      z-index: 100;
+      section.contact-info {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        font-size: 1.75rem;
+        background: rgb(255, 255, 255);
+        &.active {
+          ul {
+            font-size: 1.75rem;
+            height: 100%;
+            margin-top: 2.4em;
+          }
+        }
+        &::before {
+          line-height: 1em;
+          top: 0;
+          left: -1.5em;
+          font-size: 1.6em;
+        }
+        li.just-the-tip {
+          top: 4px;
+        }
+      }
+      .tooltip {
+        &::after {
+          font-size: 1em;
+          top: 3em;
+          line-height: 1em;
+        }
+      }
+    }
+    main {
+      padding: 3em 0 4em 0;
+      display: block;
+      grid-area: none;
+      &::before {
+        right: auto;
+        font-size: 2em;
+      }
+      aside {
+        display: block;
+        grid-area: none;
+      }
+      .main-content {
+        display: block;
+        grid-area: none;
+      }
+      footer {
+        height: 4em;
+        ul.share-buttons li {
+          font-size: 1.25rem;
+        }
+        .all-parsed {
+          z-index: 99;
+        }
+        ul.current-fonts {
+          right: 0;
+          height: 69px;
+        }
+        ul.current-pallet {
+          height: 100px;
+          right: auto;
+          left: 3px;
+        }
+        div.res-me {
+          article {
+            font-size: 0.8em;
+            margin: 18% 5% 0;
+            height: 40%;
+            width: auto;
+            bottom: 7em;
+          }
+          span {
+            right: 0;
+            bottom: -10em;
+            height: 50em;
+          }
+          button.closer {
+            display: none;
+          }
+        }
+        div.res-map {
+          width: 100%;
+          height: 100%;
+          border: none;
+          .res-map-info {
+            position: absolute;
+            bottom: 2em;
+          }
+        }
+        button.closer {
+          top: 4em;
+          right: 1em;
+          left: auto;
+        }
+      }
+    }
+  }
+
+  // modal
+  body.modal {
+    > header {
+      &::after {
+        width: auto;
+        left: auto;
+        right: auto;
+        font-size: 1em;
+      }
+    }
+    .fancy-modal {
+      width: auto;
+      left: auto;
+      margin: 0 1em;
+      height: 40rem;
+      .modal-content {
+        height: 28rem;
+      }
+    }
+  }
+  body #HEY h2 {
+    margin: 0 0 0 32vw;
+    top: -5rem;
+    font-size: 4rem;
+    > a {
+      top: 2em;
+    }
+  }
+
+  .toggler.pallet-toggle,
+  .toggler.fonts-toggle {
+    padding-left: 3em;
+  }
+  section.res-skills h3 nav {
+    top: 0.3em;
+  }
+  section article nav {
+    top: 0.1em;
+    right: 0.2em;
+    font-size: 1.75em;
+  }
+
+  // agile theme specific deco
+  body.agile > header {
+    font-size: 0.7rem;
+  }
+  body.agile aside {
+    padding-top: 3em;
+  }
+  .agile main::before {
+    top: 2em;
+    right: unset;
+    font-size: 2.25em;
+    transform: unset;
+    margin: 0 1em;
+  }
+  .agile footer .toppy {
+    position: absolute;
+    bottom: -1.25em;
+  }
+  .agile footer .cleany {
+    top: -3em;
+    position: absolute;
+  }
+
+  /* skills */
+  .agile .note::before,
+  .agile .taped-b::before {
+    left: 33%;
+    top: -11px;
+    width: 35px;
+    height: 14px;
+  }
+  .agile ul.tabs.taped-b::before {
+    top: 1.5em;
+    left: 15%;
+  }
+  .agile .tabs .tab-content {
+    top: 24px;
+  }
+  .agile .tabby {
+    height: 42px;
+  }
+  .agile .res-skills-core h3 {
+    left: 8em;
+    top: -2em;
+  }
+  .agile .res-skills-core ul.tabs {
+    margin-top: -3em;
+  }
+
+  /* notepad */
+  .agile aside .res-interests .slide-show,
+  .agile aside .res-interests .slide-show li {
+    height: 300px !important;
+  }
+  .agile .paper {
+    background-size: 100% 17px;
+  }
+  .agile aside .res-interests li p {
+    line-height: 1.3em;
+    padding: 1em 0 0;
+    font-size: 1em;
+  }
+
+  /* doodles */
+  .agile .res-doodles ul {
+    max-width: 100%;
+  }
+  .agile .res-doodles li {
+    max-width: 40%;
+  }
+
+  .agile section div.note-card {
+    height: 17rem;
+    width: 25rem;
+    background-position: 0% -32%;
+  }
+  .agile .note-card .tack .inner {
+    left: 50%;
+    top: -0.25em;
+    margin-left: auto;
+  }
+  .agile .note-card-text {
+    background-size: 1px 34px;
+    height: 79%;
+  }
+  .agile section div.note-card span p {
+    line-height: 1.3em;
+    margin: 0 0 1.1em;
+    padding: 0.2em 0 0;
+  }
+
+  .agile .tack .inner,
+  .agile .add-tack::before {
+    width: 16px;
+    height: 16px;
+  }
+  .agile .tack .inner:after,
+  .agile .add-tack::after {
+    height: 23px;
+    width: 26px;
+    margin: -4px 0 0 -5px;
+  }
+  .agile .tack .inner:after {
+    height: 22px;
+    margin: 4px 0 0 3px;
+  }
+
+  .agile section.res-history article {
+    width: auto;
+    margin: 0 0 1.5em 4%;
+    padding: 2.4em 1em 1.5em;
+  }
+  .agile section.res-history::before {
+    left: -1.5em;
+    height: 98.5%;
+  }
+  .agile section.res-history h2::after {
+    left: -0.75em;
+  }
+  .agile article span.blank {
+    width: 13em;
+  }
+  .agile article span.blank a {
+    font-size: 1em;
+  }
+  .agile article span.logo {
+    height: 3.5em;
+    width: 3.5em;
+  }
+
+  .agile section.res-history article::before {
+    left: -1.7em;
+    top: -2em;
+    height: 5em;
+    width: 5em;
+  }
+  .agile section.res-history::after {
+    bottom: 0.5em;
+    left: -3em;
+    width: 3.25em;
+  }
+
+  .agile article summary.org-summary {
+    left: 10em;
+  }
+  .agile article span.org-dates {
+    left: -4.8em;
+    font-size: 0.8em;
+  }
+  .agile .m::after,
+  .agile .m::before,
+  .agile .y::after,
+  .agile .y::before {
+    width: 1px;
+    height: 10px;
+  }
+  .agile time.org-start {
+    bottom: -5px;
+  }
+  .agile article summary.org-summary {
+    top: 0;
+  }
+  .agile ul.polaroids a {
+    margin: 0 0 12px 12px;
+    padding: 5px 5px 5px;
+  }
+  .agile span.clippy {
+    margin-bottom: 6px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .agile .res-education ul {
+    margin: 0 1em 4em;
+    max-width: 100%;
+  }
+  .agile .res-education li {
+    width: 9em;
+    height: 150px;
+  }
+  .agile .res-education li:hover img {
+    bottom: 2em;
+  }
+  .agile .res-education li h2 {
+    font-size: 0.6em;
+  }
+  .agile .res-education li dl {
+    height: 17em;
+  }
+
+  .agile div.res-me span {
+    right: auto;
+    bottom: auto;
+    height: 50vh;
+  }
+  .agile div.res-me article {
+    font-size: 0.8em;
+    margin: 1vh 1vw;
+    height: 52vh;
+    width: 96vw;
+    bottom: 1vh;
+    position: absolute;
+    z-index: 100;
+  }
+
+  .agile div.res-map {
+    width: 100%;
+    border-right: none;
+  }
+
+  .port-wrap {
+    > h2 {
+      display: none;
+    }
+    .port-gallery {
+      padding: 1rem 0 0 6rem;
+
+      .hex-outer {
+        &:nth-child(2n) {
+          clear: left;
+          margin: 44px 2px 0 -72px;
+        }
+        &:nth-child(4n) {
+          clear: left;
+          margin: 44px 2px 0 0;
+        }
+
+        &:hover {
+          // transform: scale(1.5);
+          .caption {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  // .tablet-portait-only
+  html {
+    font-size: 10px;
+  }
+
+  .port-wrap {
+    .port-gallery {
+      padding: 4rem 0 0 8rem;
+      .hex-outer {
+        &:nth-child(2n) {
+          clear: left;
+          margin: 44px 2px 0 -72px;
+        }
+        &:nth-child(4n) {
+          clear: left;
+          margin: 44px 2px 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  // .tablet-portrait-up
+  html {
+    font-size: 10px;
+  }
+  body > header {
+    font-size: 1.8rem;
+  }
+
+  .fancy-modal {
+    width: 61vw;
+    height: 60rem;
+  }
+  .fancy-modal .modal-content {
+    height: 44rem;
+  }
+  .fancy-modal h5,
+  .fancy-modal p {
+    font-size: 1.5em;
+  }
+  .fancy-modal a.modal-closer {
+    font-size: 1.25em;
+  }
+
+  body > header section.contact-info {
+    width: 40%;
+    position: fixed;
+    font-size: 1.5rem;
+    background: rgb(255, 255, 255);
+  }
+  .contact-info::before {
+    left: -10.75em;
+    font-size: 5rem;
+    top: -0.2em;
+  }
+  .contact-info.active::before {
+    width: 1.75em;
+    height: 1.7em;
+    font-size: 1.75em;
+  }
+  .contact-info li {
+    text-align: left;
+    margin: 0;
+    padding: 0.25em 1em 0.25em 0.5em;
+  }
+  .contact-info li.just-the-tip {
+  }
+  body > header .tooltip::after {
+    top: 3em;
+    font-size: 1em;
+    line-height: 1em;
+  }
+
+  .agile main::before {
+    font-size: 5.25em;
+  }
+
+  .agile .taped-b::before,
+  .agile .note::before {
+    left: 23%;
+    top: -12px;
+    width: 47px;
+    height: 15px;
+  }
+  .agile ul.tabs.taped-b::before {
+    top: 1.5em;
+    left: 12%;
+    width: 70px;
+  }
+  .agile .tabs .tab-content {
+    top: 22px;
+  }
+  .agile .tabby {
+    height: 36px;
+  }
+
+  .agile .tack .inner,
+  .agile .add-tack::before {
+    width: 16px;
+    height: 16px;
+  }
+  .agile h3.tack .inner {
+    margin: 9px 9px 0 12px;
+  }
+  .agile .tack .inner:after,
+  .agile .add-tack::after {
+    height: 23px;
+    width: 26px;
+    margin: -4px 0 0 -5px;
+  }
+  .agile .tack .inner:after {
+    height: 22px;
+    margin: 4px 0 0 3px;
+  }
+
+  /* notepad */
+  .agile aside .res-interests {
+    margin: 0 2em 3em;
+  }
+  .agile .notepad-heading {
+    height: 44px;
+  }
+  .agile aside .res-interests .slide-show,
+  .agile aside .res-interests .slide-show li {
+    height: 269px !important;
+  }
+  .agile .paper {
+    background-size: 100% 17px;
+  }
+  .agile aside .res-interests li blockquote {
+    margin: 1em 2em 0 3em;
+  }
+  .agile aside .res-interests li p {
+    line-height: 1.6em;
+    padding: 1em 0 0;
+    font-size: 1em;
+  }
+  .agile .paper::after {
+    left: 18px;
+  }
+
+  /* doodles */
+  .agile .res-doodles ul {
+    max-width: 100%;
+  }
+  .agile .res-doodles li {
+    max-width: 40%;
+  }
+
+  .agile section div.note-card {
+    height: 19rem;
+    width: 32rem;
+    background-position: 0% -42%;
+  }
+  .agile .note-card-text {
+    background-size: 20px 33px;
+  }
+  .agile section div.note-card span p {
+    font-size: 1.3em;
+    line-height: 1.25em;
+    margin: 0.9em 0 0;
+  }
+
+  .agile section.res-history article {
+    margin: 0 0 2em 7%;
+  }
+  .agile article span.org-dates {
+    left: -5em;
+  }
+  .agile .m::after,
+  .agile .m::before,
+  .agile .y::after,
+  .agile .y::before {
+    height: 11px;
+  }
+  .agile ul.polaroids a {
+    margin: 0 0 12px 12px;
+    padding: 5px 5px 5px;
+  }
+  .agile span.clippy {
+    margin-bottom: 6px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .agile .res-education li {
+    width: 18vw;
+    height: 160px;
+  }
+  .agile .res-education li dl {
+    height: 22em;
+  }
+
+  div.res-me article {
+    margin: 8em 0em 0 5em;
+    height: 36vh;
+    width: 58vw;
+  }
+  div.res-me span {
+    height: 69%;
+    right: 0;
+  }
+  .res-map button.closer,
+  .res-me button.closer {
+    left: auto;
+    top: 8em;
+    right: 12em;
+  }
+
+  div.res-map {
+    width: 100%;
+  }
+  div.res-map-info {
+    bottom: 2em;
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  // .tablet-landscape-only
+  html {
+    font-size: 13px;
+  }
+
+  .fancy-modal {
+    width: 61vw;
+    height: 42rem;
+  }
+  .fancy-modal .modal-content {
+    height: 30rem;
+  }
+}
+
+@media (min-width: 900px) {
+  // .tablet-landscape-up
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+  // .desktop-only
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  // .desktop-up
+  html {
+    font-size: 16px;
+  }
+
+  .contact-info:not(.active):hover::after {
+    content: "";
+    text-indent: -100000;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 50%;
+    border-width: 0 2px 4px 2px;
+    font-size: 4em;
+    width: 1em;
+    padding: 4px 2px 0 2px;
+    height: 1em;
+    line-height: 1em;
+    top: 14px;
+    left: -87px;
+    animation: rotating 2s linear infinite;
+  }
+}
+
+@media (min-width: 1800px) {
+  // .big-desktop-up
+  html {
+    font-size: 20px;
+  }
+}
