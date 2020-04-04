@@ -1631,32 +1631,33 @@ footer .cleany:hover {
 }
 
 .res-user-data {
-  display: none;
+  opacity: 0;
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50vh;
-  background: #fff;
-  width: 100%;
+  left: -40%;
+  top: 0;
+  height: 100%;
+  background: white;
+  width: 38%;
   z-index: 10;
-  border-top: 3px solid;
+  border-right: 2px solid;
+  transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .res-user-data.active {
-  display: block;
+  opacity: 1;
+  left: 0;
 }
 
 .res-user-data article {
-  height: 80%;
-  margin: 1%;
+  height: 92%;
+  margin: 2%;
   border: 1px solid;
   padding: 2%;
 }
 
 .res-user-data article .panel-col {
   display: inline-block;
-  width: 50%;
   vertical-align: top;
 }
 
@@ -1676,6 +1677,7 @@ footer .cleany:hover {
   vertical-align: top;
   margin: 0;
   word-wrap: break-word;
+  text-transform: capitalize;
 }
 
 .res-user-data article .panel-col dl dd {
@@ -1993,10 +1995,12 @@ body.agile section article {
 body.agile section article nav {
   top: 0.25em;
   right: 0.4em;
+  display: block;
 }
 
 body.agile section nav {
   right: -3em;
+  display: block;
 }
 
 body.agile footer .extra {

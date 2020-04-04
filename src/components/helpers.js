@@ -3,8 +3,17 @@ import moment from "moment";
 const axios = require("axios").default;
 
 const helpers = {
+  unUnderscore: function(str) {
+    return str.replace(/_/g, " ");
+  },
+  deDash: function(str) {
+    return str.replace(/-/g, " ");
+  },
   classify: function(str) {
     return str.replace(/\W/g, "-").toLowerCase();
+  },
+  declassify: function(str) {
+    return this.unUnderscore(this.deDash(str));
   },
   capFirstLetter: function(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
@@ -79,7 +88,7 @@ const helpers = {
           '<dt class="sub-head ' +
           key +
           '">' +
-          key +
+          this.declassify(key) +
           '</dt><dd class="sub-head ' +
           key +
           '">...</dd>';
@@ -92,8 +101,8 @@ const helpers = {
           '<dt class="' +
           key + hasParent +
           '">' +
-          key +
-          '</dt><dd class="' +
+          this.declassify(key) +
+          ':</dt><dd class="' +
           key + hasParent +
           '">' +
           obj[key] +

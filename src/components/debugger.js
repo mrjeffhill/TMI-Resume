@@ -43,7 +43,7 @@ static contextType = AppData; // ***** access via this.context
     var uaGetString = "http://api.userstack.com/detect?access_key=b301331f9e5761edf368d241475b4836&ua=" + navigator.userAgent;
     axios.get(uaGetString)
     .then(function (response) {
-        console.log(response);
+        //console.log(response);
         self.setState({ ua: response.data, parsedUa: helpers.parseOmatic(response.data) });
     })
     .catch(function (error) {
@@ -58,13 +58,12 @@ static contextType = AppData; // ***** access via this.context
     
     http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
       resp.on('data', function(ip) {
-        console.log("My public IP address is: " + ip);
+        //console.log("My public IP address is: " + ip);
 
         var ipGetString = "http://api.ipstack.com/" + ip + "?access_key=440420267b2d228f92803e8a2d074666"
         axios.get(ipGetString)
         .then(function (response) {
-            console.log(response);
-
+            //console.log(response);
             self.setState({ ip: response.data.ip, ipData: response.data, parsedIp: helpers.parseOmatic(response.data) })
         })
         .catch(function (error) {
@@ -98,6 +97,7 @@ static contextType = AppData; // ***** access via this.context
 
     return (   
         <div className={debuggerClass}>
+          <a href="#" className="debugger-toggle">blah</a>
             <article className="pretty-scroll">
                 { this.state && this.state.parsedUa && 
                     <div className="panel-col">

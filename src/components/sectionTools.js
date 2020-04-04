@@ -1,49 +1,71 @@
 import * as React from "react";
+import * as ReactDOM from "react-dom";
 import { AppData } from "./appdata";
 
-const SectionTools = props => {
-  //let { state, dispatch } = React.useContext(AppData);
-  /*
-$(document).on('click', '.res-editable a.can-edit', function(e) {
-	e.preventDefault();
-});
-$(document).on('click', 'button.editable', function(e) {
-	let thisSection = $(this).closest('.res-editable');
-	thisSection.toggleClass('edit-active');
-	let isActive = thisSection.hasClass('edit-active');
-	$('.can-edit', thisSection).attr('contentEditable', isActive);
-	$('.can-edit', thisSection).not('#Skills .can-edit')[0].focus();
-	// todo: add revert
-});
-// TODO: MAERGE!!!
-$(document).on('click', 'button.print-basket', function(e) {
-	let thisSection = $(this).closest('.res-editable');
-	thisSection.toggleClass('print-me');
-});
+class SectionTools extends React.Component {
+static contextType = AppData; // ***** access via this.context
+
+  constructor(props){
+    super(props);
+    this.state = {
+      printActive: false,
+      editActive: false,
+      toolParent: {},
+      editables: []
+    };
+    this.toggleEdit = this.toggleEdit.bind(this);
+    this.togglePrint = this.togglePrint.bind(this);
+  }
+  componentDidMount(){
+    const thisTool = ReactDOM.findDOMNode(this);
+    const toolParent = thisTool.closest(".res-editable");
+    const editables = toolParent.getElementsByClassName("can-edit");
+    this.setState({ toolParent: toolParent, editables: editables });
+  }
+  toggleEdit(event){
+      //console.log("toggle edit");
+      var toolParent = this.state.toolParent
+      var editables = this.state.editables;
+      
+      toolParent.classList.toggle("edit-active");
+
+      for (let editable of editables) {
+        editable.setAttribute(
+          "contentEditable",
+          !this.state.editActive
+        );
+      }
+      
+      this.setState({ editActive: !this.state.editActive });
+  }
+  togglePrint(event){
+      //console.log("toggle print");
+      this.state.toolParent.classList.toggle("print-me");
+      this.setState({ printActive: !this.state.printActive });
+  }
 
 
+  render(){
 
-var makeEditable = function(destEl){
-	$.each(destEl, function( i, s ) {
-		$(this).append(printEditTools);
-	});
-}
-makeEditable($('#Blurbs>h2, #Doodles>h2, #Objective>h2, #Summary>h2, #Education>h2'));
-  */
-  return (
-    <nav>
-      <button className="editable">
-        <span className="tooltip" data-title="Turn editing on/off.">
-          Edit
-        </span>
-      </button>
-      <button className="print-basket">
-        <span className="tooltip" data-title="Add/Remove this for printing.">
-          Add for Print
-        </span>
-      </button>
-    </nav>
-  );
+    return (
+      <nav>
+        <button className="editable" onClick={e => {
+              this.toggleEdit(e);
+            }}>
+          <span className="tooltip" data-title="Turn editing on/off.">
+            Edit
+          </span>
+        </button>
+        <button className="print-basket" onClick={e => {
+              this.togglePrint(e);
+            }}>
+          <span className="tooltip" data-title="Add/Remove this for printing.">
+            Add for Print
+          </span>
+        </button>
+      </nav>
+    );
+  }
 };
 
 export default SectionTools;

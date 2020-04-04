@@ -80,10 +80,12 @@ body.agile {
       nav {
         top: 0.25em;
         right: 0.4em;
+        display: block;
       }
     }
     nav {
       right: -3em;
+      display: block;
     }
   }
   footer {
